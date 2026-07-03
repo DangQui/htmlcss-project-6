@@ -18,8 +18,10 @@ body {
 }
 
 /* Common */
-a {
+a,
+button {
     text-decoration: none;
+    color: inherit;
 }
 
 input,
@@ -43,6 +45,37 @@ button {
     position: sticky;
     top: -20px;
     z-index: 999;
+}
+
+.section-heading {
+    color: #080415;
+    font-size: 5.6rem;
+    font-weight: 500;
+    line-height: 1.18;
+    letter-spacing: -0.224rem;
+}
+
+.section-desc {
+    color: #51586a;
+    font-size: 1.8rem;
+    line-height: 1.67;
+}
+
+.btn {
+    --height: 62px;
+    --bg-color: var(--primary-color);
+    --text-color: #fdfdfd;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-color);
+    max-width: 170px;
+    height: var(--height);
+    font-size: 1.8rem;
+    font-weight: 700;
+    background: var(--bg-color);
+    line-height: 1.67;
 }
 
 /* Header */
@@ -115,14 +148,85 @@ button {
     column-gap: 42px;
 }
 
-.nav-item {
+.nav-link {
+    display: inline-block;
     color: #51586a;
     font-size: 1.8rem;
     line-height: normal;
     transition: transform 0.2s linear;
 }
 
-.nav-item:hover {
+.nav-link:hover {
     transform: translateY(-3px);
     color: rgb(8, 4, 21);
+}
+
+/* Hero */
+.hero {
+    display: flex;
+    padding-top: 44px;
+    background: #fbfaff;
+}
+
+.hero__inner {
+    position: relative;
+}
+
+.hero-icon-1 {
+    position: absolute;
+    top: -80px;
+    left: -215px;
+    z-index: 0;
+}
+
+.hero-icon-2 {
+    position: absolute;
+}
+
+.hero-media {
+    width: 514px;
+    height: 705px;
+}
+
+.hero-media__img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.hero-info {
+    margin-top: 137px;
+}
+
+.hero-info__heading {
+    font-size: 8rem;
+    line-height: 0.95;
+    letter-spacing: -0.32rem;
+}
+
+.hero-info__desc {
+    margin-top: 20px;
+    width: 370px;
+}
+
+.hero-cta {
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.hero-cta__btn {
+    width: 170px;
+    height: 62px;
+}
+
+.hero-cta__work {
+    margin-left: 30px;
+    color: #080415;
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 1.67;
+}
+
+.hero-cta__work:hover {
+    text-decoration: underline;
 }
