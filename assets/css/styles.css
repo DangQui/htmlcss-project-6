@@ -78,6 +78,11 @@ button {
     line-height: 1.67;
 }
 
+.btn:hover {
+    opacity: 0.9;
+    cursor: pointer;
+}
+
 /* Header */
 .header {
     height: 120px;
@@ -176,16 +181,19 @@ button {
     position: absolute;
     top: -80px;
     left: -215px;
-    z-index: 0;
 }
 
 .hero-icon-2 {
     position: absolute;
+    bottom: 0;
+    right: -174px;
 }
 
 .hero-media {
+    position: relative;
     width: 514px;
     height: 705px;
+    z-index: 1;
 }
 
 .hero-media__img {
@@ -217,6 +225,7 @@ button {
 .hero-cta__btn {
     width: 170px;
     height: 62px;
+    animation: pulse-primary-color 2s infinite;
 }
 
 .hero-cta__work {
@@ -229,4 +238,57 @@ button {
 
 .hero-cta__work:hover {
     text-decoration: underline;
+}
+
+.hero-follow {
+    display: flex;
+    align-items: center;
+    margin-top: 104px;
+}
+
+.hero-follow__text {
+    color: #51586a;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.88;
+}
+
+.hero-follow__icons {
+    margin-left: 15px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.hero-follow__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid rgb(8, 4, 21, 0.1);
+    transition: all 0.2s ease;
+}
+
+.hero-follow__icon:hover {
+    background: var(--primary-color);
+    cursor: pointer;
+    color: #fff;
+    border-color: var(--primary-color);
+}
+
+@keyframes pulse-primary-color {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgb(93, 59, 238, 0.4);
+    }
+    50% {
+        transform: scale(1.1);
+        box-shadow: 0 0 0 20px rgb(93, 59, 238, 0);
+    }
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgb(93, 59, 238, 0);
+    }
 }
