@@ -76,6 +76,11 @@
             href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
             rel="stylesheet" />
 
+        <!-- Animate On Scroll -->
+        <link
+            rel="stylesheet"
+            href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+
         <!-- Reset CSS -->
         <link rel="stylesheet" href="./assets/css/reset.css" />
 
@@ -135,7 +140,10 @@
 
                         <div class="row">
                             <div class="col-lg-5">
-                                <div class="hero-media">
+                                <div
+                                    data-aos="fade-right"
+                                    data-aos-duration="600"
+                                    class="hero-media">
                                     <img
                                         src="./assets/images/hero-1.png"
                                         alt="An Interactive Designer"
@@ -143,7 +151,10 @@
                                 </div>
                             </div>
                             <div class="col-lg-5 offset-lg-2">
-                                <div class="hero-info">
+                                <div
+                                    class="hero-info"
+                                    data-aos="fade-left"
+                                    data-aos-duration="600">
                                     <h1
                                         class="section-heading hero-info__heading">
                                         An Interactive Designer
@@ -216,6 +227,63 @@
                     </div>
                 </div>
             </section>
+            <!-- Client -->
+            <section class="client">
+                <div class="container">
+                    <section
+                        class="client__inner"
+                        data-aos="zoom-in"
+                        data-aos-duration="600">
+                        <h2 class="client__title">Meet my recent clients</h2>
+                        <div class="client__list">
+                            <div class="client-item">
+                                <img
+                                    src="./assets/icons/google.svg"
+                                    alt="Google"
+                                    class="client-item__brand" />
+                                <img
+                                    src="./assets/icons/warner-bros.svg"
+                                    alt="Warner Bros"
+                                    class="client-item__brand" />
+                                <img
+                                    src="./assets/icons/upwork.svg"
+                                    alt="Upwork"
+                                    class="client-item__brand" />
+                                <img
+                                    src="./assets/icons/creative-cloude.svg"
+                                    alt="Creative cloude"
+                                    class="client-item__brand" />
+                            </div>
+                            <div class="client-item">
+                                <img
+                                    src="./assets/icons/mailchamp.svg"
+                                    alt="Mailchimp"
+                                    class="client-item__brand" />
+                                <img
+                                    src="./assets/icons/adobe.svg"
+                                    alt="Adobe"
+                                    class="client-item__brand" />
+                                <img
+                                    src="./assets/icons/woocommercde.svg"
+                                    alt="Woocommercde"
+                                    class="client-item__brand" />
+                                <img
+                                    src="./assets/icons/canva.svg"
+                                    alt="Canva"
+                                    class="client-item__brand" />
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </section>
         </main>
+
+        <!-- Animate On Scroll -->
+        <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+        <script>
+            AOS.init({
+                once: true,
+            });
+        </script>
     </body>
 </html>
