@@ -522,6 +522,128 @@ button {
     color: var(--primary-color);
 }
 
+/* Intro */
+.intro {
+    margin-top: 140px;
+}
+
+.intro__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.intro__sub-title {
+    color: #5d3bee;
+    font-size: 3.2rem;
+    font-weight: 500;
+    line-height: 1.25;
+    letter-spacing: -0.128rem;
+}
+
+.intro__title {
+    margin-top: 10px;
+}
+
+.intro__desc {
+    width: 570px;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.intro__stats {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px 0;
+    margin: 70px 112px;
+}
+
+.intro__stats::before,
+.intro__stats::after {
+    position: absolute;
+    content: "";
+    display: inline-block;
+    width: 100%;
+    height: 1px;
+    background: rgba(8, 4, 21, 0.2);
+}
+
+.intro__stats::before {
+    top: 0;
+    left: 0;
+}
+
+.intro__stats::after {
+    bottom: 0;
+    left: 0;
+}
+
+.stat-item__number {
+    color: #080415;
+    font-size: 5.6rem;
+    font-weight: 500;
+    line-height: 1.36;
+    letter-spacing: 0.168rem;
+    text-decoration: underline;
+}
+
+.stat-item__lable {
+    color: #51586a;
+    font-size: 1.8rem;
+    line-height: 1.67;
+}
+
+.intro__video {
+    position: relative;
+    height: 628px;
+}
+
+.intro__thumb {
+    width: 100%;
+    object-fit: cover;
+}
+
+.intro__icon-play {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 111px;
+    height: 111px;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 50%;
+    backdrop-filter: blur(12px);
+    transform: translate(-50%, -50%);
+    color: var(--primary-color);
+    transition: opacity 0.25s ease-in-out;
+}
+
+.intro__icon-play:hover {
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+.intro__badge {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 170px;
+    height: 62px;
+    background: #fff;
+    color: #51586a;
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 1.67;
+    text-transform: uppercase;
+}
+
 @keyframes pulse-primary-color {
     0% {
         transform: scale(1);
