@@ -70,12 +70,15 @@ button {
     align-items: center;
     justify-content: center;
     color: var(--text-color);
-    max-width: 170px;
+    min-width: 170px;
     height: var(--height);
     font-size: 1.8rem;
     font-weight: 700;
     background: var(--bg-color);
     line-height: 1.67;
+    border: none;
+    outline: none;
+    transition: opacity 0.25s ease-in-out;
 }
 
 .btn:hover {
@@ -503,6 +506,20 @@ button {
 
 .project-item:hover .project-item__img {
     transform: scale(1.05);
+}
+
+.project__btn {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #fff;
+    color: #080415;
+    margin-top: 80px;
+    transition: color 0.25s ease-in-out;
+}
+
+.project__btn:hover {
+    color: var(--primary-color);
 }
 
 @keyframes pulse-primary-color {
