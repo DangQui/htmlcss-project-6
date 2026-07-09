@@ -781,9 +781,12 @@ button {
 .faq-item {
     position: relative;
     display: flex;
-    align-items: center;
     justify-content: space-between;
     border-bottom: 2px solid #08182f;
+}
+
+.faq-item__wrap ~ .faq-item__wrap {
+    margin-top: 60px;
 }
 
 .faq-item__info {
@@ -798,6 +801,7 @@ button {
     line-height: 1.25;
     letter-spacing: -0.128rem;
     margin-bottom: 33px;
+    transition: all 0.25s;
 }
 
 .faq-item__btn {
@@ -808,7 +812,14 @@ button {
     height: 50px;
     border: 2px solid;
     border-radius: 50%;
+    margin-top: 12px;
     border-color: rgba(22, 26, 28, 0.2);
+    color: #161a1c;
+    transition: margin-top 0.25s;
+}
+
+.faq-item__btn:hover {
+    cursor: pointer;
 }
 
 .faq-item__answer {
@@ -819,17 +830,41 @@ button {
     opacity: 0;
     height: 0;
     visibility: hidden;
+    transition: all 0.25s;
 }
 
-.hidden-check:checked ~ .faq-item__question {
+.faq-item__icon-minus {
+    display: none;
+}
+
+.hidden-check:checked ~ .faq-item {
+    border-color: var(--primary-color);
+}
+
+.hidden-check:checked ~ .faq-item .faq-item__question {
     margin-bottom: 0;
+    color: var(--primary-color);
 }
 
-.hidden-check:checked ~ .faq-item__answer {
+.hidden-check:checked ~ .faq-item .faq-item__answer {
     opacity: 1;
     visibility: visible;
     height: auto;
     padding: 22px 0;
+}
+
+.hidden-check:checked ~ .faq-item .faq-item__icon-plus {
+    display: none;
+}
+
+.hidden-check:checked ~ .faq-item .faq-item__icon-minus {
+    display: inline-block;
+    color: var(--primary-color);
+}
+
+.hidden-check:checked ~ .faq-item .faq-item__btn {
+    margin-top: 35px;
+    border: 2px solid rgba(93, 59, 238, 0.2);
 }
 
 @keyframes pulse-primary-color {
