@@ -916,6 +916,118 @@ button {
     object-fit: cover;
 }
 
+/* Contact */
+.contact {
+    margin-top: 140px;
+}
+
+.contact__container {
+    position: relative;
+    width: 1330px;
+    padding: 68px 0;
+    background: #fbfaff;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contact__icon-deco {
+    position: absolute;
+}
+
+.contact__icon-deco:first-child {
+    bottom: 0;
+    left: 0;
+}
+
+.contact__icon-deco:nth-child(2) {
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.contact__icon-deco:last-of-type {
+    right: 0;
+    top: 0;
+}
+
+.contact__inner {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+}
+
+.contact__inner:hover .contact__icon {
+    animation: rotate 0.5s infinite;
+}
+
+.contact__heading {
+    margin-top: 18px;
+}
+
+.contact__desc {
+    width: 570px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.contact__btn {
+    margin-top: 40px;
+    width: 170px;
+    height: 62px;
+    animation: pulse-primary-color 2s infinite;
+}
+
+/* Footer */
+.footer {
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.footer .header__inner {
+    padding-bottom: 32px;
+    border-bottom: 1px solid rgb(12, 7, 32, 0.2);
+}
+
+.footer__bottom {
+    margin-top: 18px;
+}
+
+.footer__copyright {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.copyright {
+    color: #525771;
+    font-size: 1.8rem;
+    line-height: 1.67;
+}
+
+.footer__copyright-right {
+    display: flex;
+    align-items: center;
+    color: #525771;
+    font-size: 1.8rem;
+    line-height: 1.67;
+    letter-spacing: -0.054rem;
+}
+
+.footer__privacy {
+    margin-right: 23px;
+}
+
+.footer__term::before {
+    content: "";
+    display: inline-block;
+    width: 1.5px;
+    height: 14px;
+    background: rgba(82, 87, 113, 0.6);
+    margin-right: 13px;
+}
+
 @keyframes pulse-primary-color {
     0% {
         transform: scale(1);
@@ -928,5 +1040,17 @@ button {
     100% {
         transform: scale(1);
         box-shadow: 0 0 0 0 rgb(93, 59, 238, 0);
+    }
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(15deg);
+    }
+    100% {
+        transform: rotate(0deg);
     }
 }
