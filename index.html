@@ -76,6 +76,14 @@
             href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
             rel="stylesheet" />
 
+        <!-- Font Awesome -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+            integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer" />
+
         <!-- Animate On Scroll -->
         <link
             rel="stylesheet"
@@ -123,6 +131,72 @@
                 </nav>
             </div>
         </header>
+
+        <!-- Small Header -->
+        <header class="small-header">
+            <div class="container">
+                <div class="small-header__inner">
+                    <a href="#!" class="small-header__logo">
+                        <img
+                            src="./assets/images/logo-small.svg"
+                            alt=""
+                            class="small-header__img" />
+                    </a>
+                    <div class="small-header__feature">
+                        <a href="#!" class="small-header__mail">
+                            <img
+                                src="./assets/icons/mail.svg"
+                                alt=""
+                                class="small-header__icon-mail" />
+                        </a>
+                        <input
+                            type="checkbox"
+                            id="small-header__input"
+                            class="small-header__input"
+                            hidden />
+                        <label
+                            for="small-header__input"
+                            class="small-header__menu">
+                            <img
+                                src="./assets/icons/menu.svg"
+                                alt=""
+                                class="small-header__menu-icon" />
+                        </label>
+
+                        <div class="drawer">
+                            <label
+                                for="small-header__input"
+                                class="small-header__back">
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </label>
+                            <div class="drawer-wrapper">
+                                <nav class="drawer__nav">
+                                    <ul class="drawer__list">
+                                        <li class="drawer-item">
+                                            <a href="#!">Projects</a>
+                                        </li>
+                                        <li class="drawer-item">
+                                            <a href="#!">Journey</a>
+                                        </li>
+                                        <li class="drawer-item">
+                                            <a href="#!">Service</a>
+                                        </li>
+                                        <li class="drawer-item">
+                                            <a href="#!">Contact</a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+
+                        <label
+                            for="small-header__input"
+                            class="drawer-overlay"></label>
+                    </div>
+                </div>
+            </div>
+        </header>
+
         <!-- Main -->
         <main>
             <!-- Hero -->
@@ -296,57 +370,78 @@
                         class="specialize__list"
                         data-aos="fade-up"
                         data-aos-duration="600">
-                        <div class="row">
-                            <div class="col-lg-4">
-                                <article class="specialize-card">
-                                    <span class="specialize-card__icon">
-                                        <img
-                                            src="./assets/icons/specialize-1.svg"
-                                            alt="" />
-                                    </span>
-                                    <h3 class="specialize-card__title">
-                                        <a href="#!">Product design</a>
-                                    </h3>
-                                    <p class="specialize-card__desc">
-                                        Lorem ipsum dolor sit amet, solor
-                                        adipiscing elit. Non nisl solor ut
-                                        elementum turpis.
-                                    </p>
-                                </article>
-                            </div>
-                            <div class="col-lg-4">
-                                <article class="specialize-card">
-                                    <span class="specialize-card__icon">
-                                        <img
-                                            src="./assets/icons/specialize-2.svg"
-                                            alt="" />
-                                    </span>
-                                    <h3 class="specialize-card__title">
-                                        <a href="#!">UI/UX Design</a>
-                                    </h3>
-                                    <p class="specialize-card__desc">
-                                        Lorem ipsum dolor sit amet, solor
-                                        adipiscing elit. Non nisl solor ut
-                                        elementum turpis.
-                                    </p>
-                                </article>
-                            </div>
-                            <div class="col-lg-4">
-                                <article class="specialize-card">
-                                    <span class="specialize-card__icon">
-                                        <img
-                                            src="./assets/icons/specialize-3.svg"
-                                            alt="" />
-                                    </span>
-                                    <h3 class="specialize-card__title">
-                                        <a href="#!">Interactive design</a>
-                                    </h3>
-                                    <p class="specialize-card__desc">
-                                        Lorem ipsum dolor sit amet, solor
-                                        adipiscing elit. Non nisl solor ut
-                                        elementum turpis.
-                                    </p>
-                                </article>
+                        <div class="specialize__track">
+                            <article class="specialize-card">
+                                <span class="specialize-card__icon">
+                                    <img
+                                        src="./assets/icons/specialize-1.svg"
+                                        alt="" />
+                                </span>
+                                <h3 class="specialize-card__title">
+                                    <a href="#!">Product design</a>
+                                </h3>
+                                <p class="specialize-card__desc">
+                                    Lorem ipsum dolor sit amet, solor adipiscing
+                                    elit. Non nisl solor ut elementum turpis.
+                                </p>
+                            </article>
+                            <article class="specialize-card">
+                                <span class="specialize-card__icon">
+                                    <img
+                                        src="./assets/icons/specialize-2.svg"
+                                        alt="" />
+                                </span>
+                                <h3 class="specialize-card__title">
+                                    <a href="#!">UI/UX Design</a>
+                                </h3>
+                                <p class="specialize-card__desc">
+                                    Lorem ipsum dolor sit amet, solor adipiscing
+                                    elit. Non nisl solor ut elementum turpis.
+                                </p>
+                            </article>
+                            <article class="specialize-card">
+                                <span class="specialize-card__icon">
+                                    <img
+                                        src="./assets/icons/specialize-3.svg"
+                                        alt="" />
+                                </span>
+                                <h3 class="specialize-card__title">
+                                    <a href="#!">Interactive design</a>
+                                </h3>
+                                <p class="specialize-card__desc">
+                                    Lorem ipsum dolor sit amet, solor adipiscing
+                                    elit. Non nisl solor ut elementum turpis.
+                                </p>
+                            </article>
+                        </div>
+                        <div class="specialize__dots">
+                            <input
+                                type="radio"
+                                name="specialize-dot"
+                                id="s-dot-1"
+                                hidden
+                                checked />
+                            <input
+                                type="radio"
+                                name="specialize-dot"
+                                id="s-dot-2"
+                                hidden />
+                            <input
+                                type="radio"
+                                name="specialize-dot"
+                                id="s-dot-3"
+                                hidden />
+
+                            <div class="specialize__dot-list">
+                                <label
+                                    for="s-dot-1"
+                                    class="specialize__dot"></label>
+                                <label
+                                    for="s-dot-2"
+                                    class="specialize__dot active"></label>
+                                <label
+                                    for="s-dot-3"
+                                    class="specialize__dot"></label>
                             </div>
                         </div>
                     </div>
@@ -935,8 +1030,8 @@
                             @interaction_arif
                         </a>
                         <div class="atmosphere__list">
-                            <div class="row">
-                                <div class="col-lg-4">
+                            <div class="row g-4">
+                                <div class="col-lg-4 col-md-6">
                                     <div
                                         class="atmosphere-item"
                                         data-aos="flip-left"
@@ -947,7 +1042,7 @@
                                             class="atmosphere-item__img" />
                                     </div>
                                 </div>
-                                <div class="col-lg-4">
+                                <div class="col-lg-4 col-md-6">
                                     <div
                                         class="atmosphere-item"
                                         data-aos="flip-left"
@@ -958,7 +1053,7 @@
                                             class="atmosphere-item__img" />
                                     </div>
                                 </div>
-                                <div class="col-lg-4">
+                                <div class="col-lg-4 col-md-6">
                                     <div
                                         class="atmosphere-item"
                                         data-aos="flip-left"
@@ -1050,6 +1145,7 @@
                         <span class="copyright"
                             >©interactiveArif 2021. All rights reserved.</span
                         >
+                        <div class="divider"></div>
                         <div class="footer__copyright-right">
                             <span class="footer__privacy">Privacy Policy</span>
                             <span class="footer__term"

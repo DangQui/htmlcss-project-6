@@ -42,6 +42,31 @@
     --space-row: 0;
 }
 
+.g-1 {
+    --space-col: 6px;
+    --space-row: 6px;
+}
+
+.g-2 {
+    --space-col: 14px;
+    --space-row: 14px;
+}
+
+.g-3 {
+    --space-col: 22px;
+    --space-row: 22px;
+}
+
+.g-4 {
+    --space-col: 30px;
+    --space-row: 30px;
+}
+
+.g-5 {
+    --space-col: 46px;
+    --space-row: 46px;
+}
+
 /* Columns Base Styles */
 /* Áp dụng cho mọi phần tử là con trực tiếp của row */
 .row > * {
