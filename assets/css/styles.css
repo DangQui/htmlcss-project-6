@@ -230,8 +230,8 @@ button {
 }
 
 .hero-cta__btn {
-    width: 170px;
-    height: 62px;
+    --height: 62px;
+    min-width: 170px;
     animation: pulse-primary-color 2s infinite;
 }
 
@@ -602,7 +602,7 @@ button {
     text-decoration: underline;
 }
 
-.stat-item__lable {
+.stat-item__label {
     color: #51586a;
     font-size: 1.8rem;
     line-height: 1.67;
@@ -987,9 +987,10 @@ button {
 }
 
 .contact__btn {
+    --height: 62px;
+
+    min-width: 170px;
     margin-top: 40px;
-    width: 170px;
-    height: 62px;
     animation: pulse-primary-color 2s infinite;
 }
 
@@ -1015,7 +1016,7 @@ button {
 }
 
 .copyright {
-    color: #525771;
+    color: rgba(82, 87, 113, 0.6);
     font-size: 1.8rem;
     line-height: 1.67;
 }
